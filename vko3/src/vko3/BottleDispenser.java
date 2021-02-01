@@ -2,7 +2,7 @@ package vko3;
 
 public class BottleDispenser {
     private int bottles;
-    private Bottle[] bottle_array;
+    private final Bottle[] bottle_array;
     private int money;
     
     public BottleDispenser() {
@@ -21,7 +21,7 @@ public class BottleDispenser {
         if (bottles != 0 && money != 0) {
             --bottles;
             --money;
-            System.out.println("KACHUNK! A bottle came out of the dispenser!");
+            System.out.println("KACHUNK! " + bottle_array[0].getName() + " came out of the dispenser!");
         }else if (money == 0) {
             System.out.println("Add money first!");
         }
