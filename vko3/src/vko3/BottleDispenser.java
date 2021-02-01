@@ -2,11 +2,16 @@ package vko3;
 
 public class BottleDispenser {
     private int bottles;
+    private Bottle[] bottle_array;
     private int money;
     
     public BottleDispenser() {
-        bottles = 5;
+        bottles = 50;
         money = 0;
+        bottle_array = new Bottle[bottles];
+        for (int i = 0;i<bottles;i++) {
+            bottle_array[i] = new Bottle();
+        }
     }
     public void addMoney() {
         money += 1;
