@@ -26,6 +26,7 @@ public class Bottle {
     public float getPrice() {
         return price;
     }
-    //public String getManufacturer(){}
-    //public double getEnergy(){}
+    public float getSize() {
+        return size;
+    }
 }
