@@ -14,7 +14,9 @@ public class Bottle {
         manufacturer = manuf;
         total_energy = (float) totE;
     }
-    //public String getName(){}
+    public String getName() {
+        return name;
+    }
     //public String getManufacturer(){}
     //public double getEnergy(){}
 }
