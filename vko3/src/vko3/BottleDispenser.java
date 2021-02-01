@@ -18,11 +18,11 @@ public class BottleDispenser {
         System.out.println("Klink! Added more money!");
     }
     public void buyBottle() {
-        if (bottles != 0 && money != 0) {
+        if (bottles != 0 && (money - bottle_array[0].getPrice() > 0)) {
             --bottles;
-            --money;
+            money -= bottle_array[0].getPrice();
             System.out.println("KACHUNK! " + bottle_array[0].getName() + " came out of the dispenser!");
-        }else if (money == 0) {
+        } else {
             System.out.println("Add money first!");
         }
     }
