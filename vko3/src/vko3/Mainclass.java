@@ -10,7 +10,7 @@ public class Mainclass {
         BottleDispenser bd = new BottleDispenser();
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         while (true){
-            System.out.println("*** BOTTLE DISPENSER ***");
+            System.out.println("\n*** BOTTLE DISPENSER ***");
             System.out.println("1) Add money to the machine");
             System.out.println("2) Buy a bottle");
             System.out.println("3) Take money out");
@@ -33,7 +33,6 @@ public class Mainclass {
                 break;
             else
                 System.out.println("Error");
-            System.out.println();
         }
     }
 }
