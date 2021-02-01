@@ -8,12 +8,10 @@ public class BottleDispenser {
         bottles = 5;
         money = 0;
     }
-    
     public void addMoney() {
         money += 1;
         System.out.println("Klink! Added more money!");
     }
-    
     public void buyBottle() {
         if (bottles != 0 && money != 0) {
             --bottles;
@@ -23,9 +21,8 @@ public class BottleDispenser {
             System.out.println("Add money first!");
         }
     }
-    
     public void returnMoney() {
         money = 0;
-        System.out.println("Klink klink!! All money gone!");
+        System.out.println("Klink klink. Money came out!");
     }
 }
