@@ -5,7 +5,7 @@ package vko4;
 public class Mainclass {
     public static void main(String[] args) {
         ReadAndWriteIO io = new ReadAndWriteIO();
-        io.readAndWrite("input.txt", "output.txt");
+        io.readZip("zipinput.zip");
         //System.out.println(System.getProperty("user.dir"));
         
         /*File file = new File(".");
