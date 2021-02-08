@@ -5,7 +5,7 @@ package vko4;
 public class Mainclass {
     public static void main(String[] args) {
         ReadAndWriteIO io = new ReadAndWriteIO();
-        io.readFile("input.txt");
+        io.readAndWrite("input.txt", "output.txt");
         //System.out.println(System.getProperty("user.dir"));
         
         /*File file = new File(".");
